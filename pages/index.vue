@@ -18,7 +18,7 @@
           <span>Fullstack Developer</span>
         </div>
         <div class="md:w-3/5 m-auto">
-          <img src="img/hello.png" alt="" class="pres w-full border-2">
+          <img src="public/img/hello.png" alt="" class="pres w-full border-2">
         </div>
         <div class="pt-8">
           <p>
