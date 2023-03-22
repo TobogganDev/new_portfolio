@@ -10,10 +10,7 @@
   src: url("fonts/BandeinsStrangeVariableGX.ttf");
 }
 
-@font-face {
-  font-family: "Beamie";
-  src: url("fonts/Beamie-7BJP.ttf");
-}
+
 
 *{
   margin: 0;
@@ -24,7 +21,7 @@
 }
 
 body{
-  font-family: $sans;
+  font-family: $strange;
   color: $text;
   background:$background radial-gradient(
     rgba(0, 0, 0, 0.3) 8%,
@@ -34,4 +31,11 @@ body{
   background-size: 2vmin 2vmin;
   height: 100%;
   width: 100%;
+  color: $text;
+}
+
+::selection{
+  background: #F0A04B;
+  color: white;
+  -webkit-text-stroke-color: white;
 }

@@ -9,7 +9,8 @@ export default defineNuxtConfig({
   app: {
     head: {
       script: [
-        { src: 'https://kit.fontawesome.com/23761b7654.js', crossorigin: 'anonymous' }
+        { src: 'https://kit.fontawesome.com/23761b7654.js', crossorigin: 'anonymous' },
+        { src: 'js/script.js', body: true }
       ],
       title: 'Portfolio TobogganDev',
     }
