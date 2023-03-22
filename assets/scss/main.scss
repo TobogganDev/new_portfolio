@@ -1,16 +1,13 @@
 @import "variables";
 
 @font-face {
-  font-family: "Bandeins Sans";
-  src: url("fonts/BandeinsSansVariableGX.ttf");
-}
-
-@font-face {
   font-family: "Bandeins Strange";
   src: url("public/fonts/BandeinsStrangeVariableGX.ttf");
 }
 
-
+html{
+  scroll-behavior: smooth;
+}
 
 *{
   margin: 0;
@@ -38,4 +35,13 @@ body{
   background: #F0A04B;
   color: white;
   -webkit-text-stroke-color: white;
+}
+
+::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  background-color: #F0A04B !important;
 }

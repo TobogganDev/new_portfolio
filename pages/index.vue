@@ -1,27 +1,35 @@
 <template>
   <div>
-    <div class="lg:flex">
+    <div class="lg:flex h-[90vh]">
       <div class="lg:w-7/12 border-r-2">
         <div class="lg:text-[13vw] md:text-9xl w-full uppercase text-6xl whitespace-nowrap overflow-hidden border-b-2">
           <h2>Projects * <span>Projects</span> * Projects</h2>
         </div>
         <div class="flex flex-col">
+          <ProjectCard :name="'Wasted Paris Shop'" :src="'img/repu.png'"/>
           <ProjectCard :name="'République'" :src="'img/repu.png'"/>
           <ProjectCard :name="'Phone App'" :src="'img/phone.png'"/>
           <ProjectCard :name="'Object Detection'" :src="'img/object.svg'"/>
-          <ProjectCard :name="'Protection Civile'" :src="'img/protect.svg'"/>
+          <ProjectCard :name="'Civil Protection'" :src="'img/protect.svg'"/>
         </div>
       </div>
-      <div class="lg:w-5/12 py-14 px-12 relative">
+      <div class="c-pres lg:w-5/12 py-14 px-8 md:px-12 relative lg:overflow-y-auto">
         <div class="absolute top-0 left-0 py-2 px-4 border-r-2 border-b-2 font-semibold dev">
           <span>Fullstack Developer</span>
         </div>
-        <div class="w-3/5 m-auto">
-          <img src="public/img/hello.png" alt="" class="pres w-full border-2">
+        <div class="md:w-3/5 m-auto">
+          <img src="img/hello.png" alt="" class="pres w-full border-2">
         </div>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium alias illum facere hic a consectetur ab est, illo quas voluptate nobis odit quos ipsum dignissimos ipsa, culpa, doloribus possimus dicta beatae necessitatibus eius provident. Rerum nulla voluptatum modi tempore reiciendis, magnam quisquam impedit? Ab, aut non! Fugit ipsa sapiente dignissimos?
-        </p>
+        <div class="pt-8">
+          <p>
+            My name's Thomas, I'm a second year student in the world of web development at the <a href="https://www.iim.fr/" class="text-link">IIM Digital School</a>
+            I'd like to specialise in front-end development because I like the creative aspect of web development
+            Other than programming, I like surfing 🏄 (I'm member of <a href="https://www.instagram.com/lavaguedevinci/" class="text-link">La vague de Vinci</a>), discover new technologies, listening to music, go out with my friends
+            During these two years, I've been able to work on several projects, both in group and individually, and I've been able to learn a lot of new things like Symfony and Vue.js and that's why I'm looking forward to specialise in these two frameforks.
+            <br>
+            <strong>And that's why I'm looking for an internship in september 2023 in order to put my knowledge into practice and to learn new things.</strong>
+          </p>
+        </div>
       </div>
     </div>
     
@@ -54,6 +62,15 @@ h2{
 
 .pres{
   box-shadow: 5px 5px 0 2px #F0A04B;
+}
+.c-pres{
+  &::-webkit-scrollbar {
+    width: 0px !important;
+  }
+  .text-link{
+    text-decoration: underline;
+    text-decoration-color: #F0A04B;
+  }
 }
 .dev{
   box-shadow: 5px 5px 0 2px #F0A04B;

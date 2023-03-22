@@ -11,7 +11,6 @@
         </div>
         <ul id="items" class="md:flex gap-4 hidden items-center h-full justify-center">
           <li><NuxtLink to="/">Home</NuxtLink></li>
-          <li><NuxtLink to="/about">About</NuxtLink></li>
           <li><NuxtLink to="/">Contact</NuxtLink></li>
         </ul>
       </nav>
