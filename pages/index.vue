@@ -13,7 +13,7 @@
           <ProjectCard :name="'Civil Protection'" :src="'img/protect.svg'"/>
         </div>
       </div>
-      <div class="c-pres lg:w-5/12 py-14 px-8 md:px-12 relative lg:overflow-y-auto">
+      <div class="c-pres lg:w-5/12 py-14 px-8 md:px-12 relative lg:overflow-y-auto border-b-2">
         <div class="absolute top-0 left-0 py-2 px-4 border-r-2 border-b-2 font-semibold dev">
           <span>Fullstack Developer</span>
         </div>
@@ -32,7 +32,9 @@
         </div>
       </div>
     </div>
-    
+    <div class="h-[50vh]">
+
+    </div>
   </div>
 </template>
 
