@@ -17,7 +17,7 @@
           <span>Fullstack Developer</span>
         </div>
         <div class="w-3/5 m-auto">
-          <img src="img/hello.png" alt="" class="pres w-full border-2">
+          <img src="public/img/hello.png" alt="" class="pres w-full border-2">
         </div>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium alias illum facere hic a consectetur ab est, illo quas voluptate nobis odit quos ipsum dignissimos ipsa, culpa, doloribus possimus dicta beatae necessitatibus eius provident. Rerum nulla voluptatum modi tempore reiciendis, magnam quisquam impedit? Ab, aut non! Fugit ipsa sapiente dignissimos?
