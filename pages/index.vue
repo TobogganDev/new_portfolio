@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="lg:flex h-[90vh]">
+    <div class="lg:flex lg:h-[90vh]">
       <div class="lg:w-7/12 border-r-2">
         <div class="lg:text-[13vw] md:text-9xl w-full uppercase text-6xl whitespace-nowrap overflow-hidden border-b-2">
           <h2 class="project-title">Projects * <span>Projects</span> * Projects</h2>
@@ -28,7 +28,7 @@
           <span>Fullstack Developer</span>
         </div>
         <div class="md:w-3/5 m-auto">
-          <img src="img/hello.png" alt="" class="pres w-full border-2">
+          <img src="public/img/hello.png" alt="" class="pres w-full border-2">
         </div>
         <div class="pt-8">
           <p>
@@ -41,9 +41,6 @@
           </p>
         </div>
       </div>
-    </div>
-    <div class="h-[50vh]">
-      <h2>Contact</h2>
     </div>
   </div>
 </template>
