@@ -3,14 +3,24 @@
     <div class="lg:flex h-[90vh]">
       <div class="lg:w-7/12 border-r-2">
         <div class="lg:text-[13vw] md:text-9xl w-full uppercase text-6xl whitespace-nowrap overflow-hidden border-b-2">
-          <h2>Projects * <span>Projects</span> * Projects</h2>
+          <h2 class="project-title">Projects * <span>Projects</span> * Projects</h2>
         </div>
         <div class="flex flex-col">
-          <ProjectCard :name="'Wasted Paris Shop'" :src="'img/repu.png'"/>
-          <ProjectCard :name="'République'" :src="'img/repu.png'"/>
-          <ProjectCard :name="'Phone App'" :src="'img/phone.png'"/>
-          <ProjectCard :name="'Object Detection'" :src="'img/object.svg'"/>
-          <ProjectCard :name="'Civil Protection'" :src="'img/protect.svg'"/>
+          <NuxtLink to="/projects/wasted">
+            <ProjectCard :name="'Wasted Paris Shop'" :src="'img/repu.png'"/>
+          </NuxtLink>
+          <NuxtLink to="/projects/republique">
+            <ProjectCard :name="'République'" :src="'img/repu.png'"/>
+          </NuxtLink>
+          <NuxtLink to="/projects/phone">
+            <ProjectCard :name="'Phone App'" :src="'img/phone.png'"/>
+          </NuxtLink>
+          <NuxtLink to="/projects/object">
+            <ProjectCard :name="'Object Detection'" :src="'img/object.svg'"/>
+          </NuxtLink>
+          <NuxtLink to="/projects/protect">
+            <ProjectCard :name="'Civil Protection'" :src="'img/protect.svg'"/>
+          </NuxtLink>
         </div>
       </div>
       <div class="c-pres lg:w-5/12 py-14 px-8 md:px-12 relative lg:overflow-y-auto border-b-2">
@@ -18,7 +28,7 @@
           <span>Fullstack Developer</span>
         </div>
         <div class="md:w-3/5 m-auto">
-          <img src="public/img/hello.png" alt="" class="pres w-full border-2">
+          <img src="img/hello.png" alt="" class="pres w-full border-2">
         </div>
         <div class="pt-8">
           <p>
@@ -33,7 +43,7 @@
       </div>
     </div>
     <div class="h-[50vh]">
-
+      <h2>Contact</h2>
     </div>
   </div>
 </template>
@@ -44,7 +54,7 @@
 
 <style lang="scss" scoped>
 @import '~/assets/scss/variables.scss';
-h2{
+.project-title{
   font-family: $strange;
   animation: rotate 30s linear infinite!important;
   span{
@@ -77,4 +87,6 @@ h2{
 .dev{
   box-shadow: 5px 5px 0 2px #F0A04B;
 }
+
+
 </style>
