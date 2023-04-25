@@ -1,4 +1,5 @@
 <template>
+  
   <div>
     <div class="lg:flex lg:h-[90vh]">
       <div class="lg:w-7/12 border-r-2">
@@ -28,7 +29,7 @@
           <span>Fullstack Developer</span>
         </div>
         <div class="md:w-3/5 m-auto">
-          <img src="public/img/hello.png" alt="" class="pres w-full border-2">
+          <img src="/img/hello.png" alt="" class="pres w-full border-2">
         </div>
         <div class="pt-8">
           <p>
@@ -42,10 +43,51 @@
         </div>
       </div>
     </div>
+    
+    <div class="revealer">
+      TOboggandev
+    </div>
+    <div class="pre-loader block">
+      <div class="loader-wrapper">
+        <div class="loader"></div>
+      </div>
+    </div>
   </div>
+  
 </template>
 
 <script setup>
+import gsap from 'gsap';
+const loader = document.querySelector(".loader");
+console.log(loader)
+gsap.from(".loader-wrapper", {
+  duration: 2,
+  scale:0.8,
+  ease: "power1.inOut"
+})
+
+gsap.from(".loader", {
+  duration: 2,
+  top: "100%",
+  ease: "power3.inOut"
+})
+
+gsap.to(".loader-wrapper, .pre-loader",{
+  duration: 1,
+  opacity: 0,
+  display: "none",
+  ease: "power3.inOut", 
+  delay: 2
+},
+"-=1")
+
+gsap.to(".revealer", {
+  duration: 0.8,
+  left: "-100%",
+  ease: "power3.inOut",
+  delay: 4
+})
+
 
 </script>
 
@@ -83,6 +125,58 @@
 }
 .dev{
   box-shadow: 5px 5px 0 2px #F0A04B;
+}
+
+.block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+.revealer{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #988871;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pre-loader{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+
+.loader-wrapper{
+  position: relative;
+  width: 10px;
+  height: 140px;
+  background: rgb(240, 240, 240);
+  border-radius: 4px;
+  overflow: hidden;
+  transform: rotate(45deg);
+}
+
+.loader{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(251, 0, 255);
+  background: linear-gradient(
+  100deg,
+  rgba(251, 0, 255, 1) 0%,
+  rgba(0, 255, 255, 1) 100%
+  );
 }
 
 
