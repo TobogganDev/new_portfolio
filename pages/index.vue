@@ -1,7 +1,8 @@
 <template>
 
-
-
+<div class="in-progress">
+  🚧 Work in progress, be back soon ...
+</div>
   <!--
   <div>
     <div class="lg:flex lg:h-[90vh]">
