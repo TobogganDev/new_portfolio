@@ -97,6 +97,12 @@ gsap.to(".revealer", {
 
 <style lang="scss" scoped>
 @import '~/assets/scss/variables.scss';
+
+.in-progress{
+  display: flex;
+  flex-grow: 1;
+}
+
 .project-title{
   font-family: $strange;
   animation: rotate 30s linear infinite!important;
