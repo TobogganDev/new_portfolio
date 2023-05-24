@@ -1,5 +1,8 @@
 <template>
-  
+
+
+
+  <!--
   <div>
     <div class="lg:flex lg:h-[90vh]">
       <div class="lg:w-7/12 border-r-2">
@@ -53,7 +56,7 @@
       </div>
     </div>
   </div>
-  
+  -->
 </template>
 
 <script setup>
